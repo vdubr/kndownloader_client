@@ -1,0 +1,69 @@
+/*
+ * SZDC lightBlue: #006FB4
+ *
+ */
+
+ @font-face {
+     font-family: NotoSans;
+     src: url(../font/NoToFont/NotoSans-Regular.ttf);
+ }
+
+body {
+   font-family: NotoSans;
+}
+
+.ol-control button{
+  background: #006FB4;
+}
+
+.navbar{
+  background: #006FB4;
+}
+
+.navbar h1{
+  margin: 0px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+#map{
+  width: 100%;
+  height: 100%;
+  padding-top: 51px;
+}
+
+.padding-0{
+  padding: 0px 0px !important;
+}
+
+.row-no-padding>[class*=col-]{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.left-panel{
+  height: 100%
+}
+
+.row-no-margin{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.leftWrapper{
+  overflow: auto;
+  position: absolute;
+  top: 51px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.logo{
+  padding: 5px;
+}
+
+.navbar-right{
+  padding-right: 20px;
+}
