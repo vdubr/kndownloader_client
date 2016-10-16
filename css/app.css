@@ -44,7 +44,15 @@ body {
 }
 
 .left-panel{
-  height: 100%
+  height: 100%;
+}
+
+.left-content{
+  height: 100%;
+}
+
+.left-content h3{
+  margin-top: 0px;
 }
 
 .row-no-margin{
@@ -66,4 +74,26 @@ body {
 
 .navbar-right{
   padding-right: 20px;
+}
+
+.footer-text{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.alert-place{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+.alert-place .alert {
+  margin: 10px 10px;
+}
+
+.search-form{
+  padding-top: 15px;
 }
