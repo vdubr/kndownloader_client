@@ -12,6 +12,10 @@ body {
    font-family: NotoSans;
 }
 
+button.export-btn{
+  margin: 5px 0px 5px;
+}
+
 .ol-control button{
   background: #006FB4;
 }
@@ -96,4 +100,8 @@ body {
 
 .search-form{
   padding-top: 15px;
+}
+
+.search-form .form-group{
+  max-width: 300px;
 }
