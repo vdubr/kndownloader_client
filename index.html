@@ -71,80 +71,88 @@
       </div>
     </nav>
     <div class="row row-no-padding row-no-margin">
-      <div class="col-sm-4 left-panel">
+      <div class="col-sm-3 col-lg-2 left-panel">
         <div class="leftWrapper">
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
                 <div class="left-content">
-                <form class = "search-form">
-                  <div class="form-group">
-                    <label class="control-label">
-                      Katastrální území
-                    </label>
-                    <p id="nazevku">
-                      neidentifikováno
-                    <p>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label">
-                      Číslo katastrálního území:
-                    </label>
-                    <p id="ku">
-                      neidentifikováno
-                    <p>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label" for="format">
-                      Formát
-                    </label>
-                    <select id="format" disabled="disabled" class="form-control">
-                      <option value="shp">Shapefile</option> <!-- error -->
-                      <option value="SQLite">SQLite</option>
-                      <option value="gml">gml</option>
-                      <option value="dgn">DGN</option>
-                      <option value="dxf">DXF</option>
-                      <option value="GeoJSON">GEOJSON</option> <!-- error -->
-                      <option value="gpx">GPX</option>
-                      <option value="kml">KML</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label" for="osrs">
-                      Souřadnicový systém
-                    </label>
-                    <select id="osrs" disabled="disabled" class="form-control">
-                      <option value="5514">JTSK/EPSG:102067(5514)</option>
-                      <option value="4326">WGS84/EPSG:4326</option>
-                    </select>
-                  </div>
-                  <button id="export" class="btn btn-default export-btn" disabled="disabled">
-                    Exportovat
-                  </button>
-                  <div class="btn-group export-btn" role="group" style="display:none">
-                    <button id="exportDGN" class="btn btn-default" >
-                      Exportovat v JTSK ze služby CUZK
+                  <form class = "search-form">
+                    <div class="form-group">
+                      <label class="control-label">
+                        Katastrální území
+                      </label>
+                      <p id="nazevku">
+                        neidentifikováno
+                      <p>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">
+                        Číslo katastrálního území:
+                      </label>
+                      <p id="ku">
+                        neidentifikováno
+                      <p>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label" for="format">
+                        Formát
+                      </label>
+                      <select id="format" disabled="disabled" class="form-control">
+                        <option value="shp">Shapefile</option> <!-- error -->
+                        <option value="SQLite">SQLite</option>
+                        <option value="gml">gml</option>
+                        <option value="dgn">DGN</option>
+                        <option value="dxf">DXF</option>
+                        <option value="GeoJSON">GEOJSON</option> <!-- error -->
+                        <option value="gpx">GPX</option>
+                        <option value="kml">KML</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label" for="osrs">
+                        Souřadnicový systém
+                      </label>
+                      <select id="osrs" disabled="disabled" class="form-control">
+                        <option value="5514">JTSK/EPSG:102067(5514)</option>
+                        <option value="4326">WGS84/EPSG:4326</option>
+                      </select>
+                    </div>
+                    <button id="export" class="btn btn-default export-btn" disabled="disabled">
+                      Exportovat
                     </button>
-                    <button class="btn btn-default" id="dgnModalOpener" >
-                      <i class="fa fa-info-circle fa-2" aria-hidden="true"></i>
-                      &nbsp;
-                    </button>
-                  </div>
-                </form>
+                    <div class="btn-group export-btn" role="group" style="display:none">
+                      <button id="exportDGN" class="btn btn-default" >
+                        Exportovat v JTSK ze služby CUZK
+                      </button>
+                      <button class="btn btn-default" id="dgnModalOpener" >
+                        <i class="fa fa-info-circle fa-2" aria-hidden="true"></i>
+                        &nbsp;
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <footer class="footer" style="position:absolute;bottom:0px">
+            <div class="container-fluid">
+              <div class="col-sm-offset-1 col-sm-10">
                 <p class="footer-text">
                   <!-- open in modal -->
                   <a href="#" data-toggle="modal" data-target="#helpModal">Nápověda</a>
                   <span class="separator">•</span>
-                  <a href="#" data-toggle="modal" data-target="#aboutModal">O aplikaci</a>
+                  <a href="#" data-toggle="modal" data-target="#aboutModal">O&nbspaplikaci</a>
                   <!-- Button trigger modal -->
                 </p>
               </div>
-              </div>
+              <!-- <p class="text-muted">Place sticky footer content here.</p> -->
             </div>
-          </div>
+          </footer>
         </div>
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-9 col-lg-10">
           <div class="map" id="map">
             <div class="alert-place">
               <div class="alert alert-warning" role="alert" id="instructionsAlert" style="display:none">
